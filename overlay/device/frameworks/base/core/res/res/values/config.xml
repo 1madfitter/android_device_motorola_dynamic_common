@@ -96,9 +96,9 @@
     </string-array>
 
     <!-- Paths to the libraries that contain device specific key handlers -->
-    <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/MotoActions/MotoActions.apk</string>
+    <string name="config_customKeyHandlerLib" translatable="false">/system/priv-app/MotoActions/MotoActions.apk</string>
 
     <!-- Names of the key handler classes -->
-    <string name="config_deviceKeyHandlerClass" translatable="false">com.moto.actions.KeyHandler</string>
+    <string name="config_customKeyHandlerClass" translatable="false">com.moto.actions.KeyHandler</string>
 
 </resources>

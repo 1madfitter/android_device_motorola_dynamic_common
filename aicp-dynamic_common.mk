@@ -19,7 +19,7 @@
 # product configuration (apps).
 #
 
-VENDOR_EXCEPTION_PATHS := omni \
+VENDOR_EXCEPTION_PATHS := aicp \
     motorola \
     gapps \
     microg
@@ -29,7 +29,7 @@ VENDOR_EXCEPTION_PATHS := omni \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Get the prebuilt list of APNs
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/aicp/config/gsm.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
@@ -54,10 +54,10 @@ BOARD_USES_RECOVERY_AS_BOOT := false
 AB_OTA_UPDATER := true
 
 DEVICE_PACKAGE_OVERLAYS += device/motorola/dynamic_common/overlay/device
-DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
+DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/CarrierConfig
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/aicp/config/common.mk)
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/motorola/dynamic_common/dynamic_common.mk)

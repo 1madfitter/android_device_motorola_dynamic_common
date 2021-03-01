@@ -78,7 +78,7 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
 PRODUCT_PACKAGES += \
-    omni_charger_res_images \
+    aicp_charger_res_images \
     animation.txt \
     font_charger.png
 
@@ -108,7 +108,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    SnapdragonCamera2
+    Snap
 
 # HIDL
 PRODUCT_PACKAGES += \
